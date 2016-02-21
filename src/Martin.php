@@ -19,6 +19,7 @@
 
 namespace MartinTali\Login;
 
+use \MartinTali\Login\Database;
 /**
  * Definition class
  *
@@ -42,5 +43,15 @@ class Martin
     public function hasCheese($bool = true)
     {
         return $bool;
+    }
+
+    /**
+     * Checks if we are connected to the databse
+     *
+     * @return \Doctrine\DBAL\Connection
+     */
+    public function isConnected()
+    {
+        return Database::getInstance()->getConnection();
     }
 }

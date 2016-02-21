@@ -10,4 +10,4 @@ require_once "vendor/autoload.php";
 
 $class = new \MartinTali\Login\Martin();
 
-var_dump($class->hasCheese(false));
+var_dump($class->isConnected(false));

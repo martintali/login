@@ -9,7 +9,9 @@
       "email": "martindaniel555@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "doctrine/dbal": "v2.5.4"
+  },
   "require-dev": {
     "phpunit/phpunit": "4.0.*"
   },
