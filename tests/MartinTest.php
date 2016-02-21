@@ -8,8 +8,13 @@
 
 namespace MartinTali\Login\Login;
 
+use MartinTali\Login\Martin;
 
-class MartinTest
+class MartinTest extends \PHPUnit_Framework_TestCase
 {
-
+    public function testTaliHasCheese()
+    {
+        $nacho = new Martin();
+        $this->assertTrue($nacho->hasCheese());
+    }
 }

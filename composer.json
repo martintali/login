@@ -1,0 +1,21 @@
+{
+  "name": "martintali/login",
+  "description": "Login module",
+  "license": "MIT",
+  "keywords": ["login", "martin", "tali"],
+  "authors": [
+    {
+      "name": "Martin Daniel",
+      "email": "martindaniel555@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "4.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MartinTali\\Login\\": "src"
+    }
+  }
+}
