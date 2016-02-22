@@ -8,6 +8,16 @@
 
 require_once "vendor/autoload.php";
 
+date_default_timezone_set('America/Argentina/Buenos_Aires');
+
 $class = new \MartinTali\Login\Martin();
 
-var_dump($class->isConnected(false));
+$app = new Silex\Application();
+
+$app->get('/', function () {
+    $output = '';
+
+    return "HOLA";
+});
+
+$app->run();

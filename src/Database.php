@@ -78,7 +78,12 @@ class Database
             'host' => 'localhost',
             'driver' => 'pdo_mysql',
         );
-        $conn = DriverManager::getConnection($connectionParams, $config);
+
+        try {
+            $conn = DriverManager::getConnection($connectionParams, $config);
+        } catch (\Exception $e) {
+            die();
+        }
 
         return $conn;
     }
