@@ -17,7 +17,7 @@ $app = new Silex\Application();
 $app->get('/', function () {
     $output = '';
 
-    return "HOLA";
+    return "HOLA K-po";
 });
 
 $app->run();
